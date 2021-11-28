@@ -1,0 +1,75 @@
+.env
+parser/__pycache__/config.cpython-38.pyc
+parser/src/__pycache__/db.cpython-38.pyc
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+config.py
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+.idea/
+flask server/__pycache__/config.cpython-39.pyc
+vkapi/__pycache__/config.cpython-38.pyc
+vkapi/__pycache__/config.cpython-39.pyc
+vkapi/src/__pycache__/db.cpython-38.pyc
+vkapi/src/__pycache__/db.cpython-39.pyc
+flask server/src/__pycache__/db.cpython-39.pyc
+flaskapi/__pycache__/config.cpython-39.pyc
+flaskapi/src/__pycache__/db.cpython-39.pyc
+.vscode/settings.json
+__pycache__/models.cpython-39.pyc
+__pycache__/config.cpython-39.pyc
+__pycache__/views.cpython-39.pyc
+__pycache__/utils.cpython-39.pyc
+__pycache__/gettoken.cpython-39.pyc
+__pycache__/merchants.cpython-39.pyc
+__pycache__/transactions.cpython-39.pyc
+models/__pycache__/lobby.cpython-39.pyc
+db/__pycache__/db.cpython-39.pyc
+db/__pycache__/config.cpython-39.pyc
