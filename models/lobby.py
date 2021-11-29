@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from time import sleep
 
+from db.db import Session, User
 
 delta_wait = 7
 delta_game = 180 # максимум катка
@@ -83,6 +84,17 @@ class Lobby():
                         'time': gamestart
                     }
                     self.connections.append(connection)
+
+                    session = Session()
+                    result = session.query(User).filter_by(login=user["username"]).first()
+                    result.games += 1
+
+                    result = session.query(User).filter_by(login=user_2["username"]).first()
+                    result.games += 1
+
+                    session.commit()
+                    session.close()
+
                     return {
                         'status':user['status'],
                         'time': gamestart

@@ -6,9 +6,9 @@ import time
 
 def test_registration():
     data = {
-        "login": "Abcde",
+        "login": "Abcd",
         "password": "qwerty",
-        "email": "kot1@gmail.com"
+        "email": "kot@gmail.com"
     }
     url = 'user/registration'
     answer = requests.post(f'http://127.0.0.1:5000/{url}', data=json.dumps(data))
@@ -18,7 +18,7 @@ def test_registration():
 
 def test_autorization():
     data = {
-        "login": "Abcdef",
+        "login": "Abcde",
         "password": "qwerty"
     }
     url = 'user/autorization'
@@ -71,6 +71,9 @@ def test_wl1():
     print(answer.json())
 
 
+test_autorization()
+
+"""
 test_connect1()
 time.sleep(1)
 test_connect2()
@@ -81,3 +84,4 @@ time.sleep(2)
 test_wl2()
 time.sleep(1)
 test_wl1()
+"""
